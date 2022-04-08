@@ -5,3 +5,7 @@ Colorize
 Icon fonts
 
 // Tema
+
+
+            <button class="btn" onclick="prev()">Next</button>
+            <button class="btn" onclick="next()">Previous</button>
