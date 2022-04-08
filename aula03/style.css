@@ -1,0 +1,59 @@
+*{
+  margin: 0; /*Margem*/
+  font-family: Arial, Helvetica, sans-serif; /*Fonte*/
+  box-sizing:border-box; /*Definir a borda*/
+}
+body{
+  background-color: #191919;
+}
+.collapsible {
+  background-color: #777; 
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 70vw;
+  background-color: #191919;
+  border: #fff solid 2px;
+  font-size: 15px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+.content {
+  width: 70vw;
+  min-height: 10vw;
+  padding: 18px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+form{
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+p{
+  margin: auto;
+}
+.box {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+}
+#resultado, #resultadoP{
+  background-color: rgb(202, 202, 202);
+  margin-top: 5px;
+  padding: 10px;
+}

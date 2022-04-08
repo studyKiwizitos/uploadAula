@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="conteudo">
+        <button type="button" class="collapsible"><p>ÁREA</p></button>
+        <div class="content">
+            <form action="">
+                <p>Altura</p> <input class="box" type="number" name="altura">
+                <p>Largura</p> <input class="box" type="number" name="largura">
+                <input type="button" value="calcular" onclick="areaRet(altura.value,largura.value)">
+                <p id="resultado">#</p>
+            </form>
+        </div>
+
+        <button type="button" class="collapsible">PERÍMETRO</button>
+        <div class="content">
+            <form action="">
+                <p>Altura</p> <input class="box" type="number" name="altura">
+                <p>Largura</p> <input class="box" type="number" name="largura">
+                <input type="button" value="calcular" onclick="somaRet(altura.value,largura.value)">
+                <p id="resultadoP">#</p>
+            </form>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
