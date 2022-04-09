@@ -6,17 +6,17 @@ let btn4 = document.querySelector('#btn4');
 let btn5 = document.querySelector('#btn5');
 
 btn1.addEventListener('click', () => {
-    img.src = 'imgs/isometric room.png';
+    img.src = '/estudo/imgs/img1.png';
 })
 btn2.addEventListener('click', () => {
-    img.src = 'imgs/poço.png';
+    img.src = '/estudo/imgs/img2.png';
 })
 btn3.addEventListener('click', () => {
-    img.src = 'imgs/predio.png';
+    img.src = '/estudo/imgs/img3.png';
 })
 btn4.addEventListener('click', () => {
-    img.src = 'imgs/planeta.png';
+    img.src = '/estudo/imgs/img4.png';
 })
 btn5.addEventListener('click', () => {
-    img.src = 'imgs/skull.png';
+    img.src = '/estudo/imgs/img5.png';
 })

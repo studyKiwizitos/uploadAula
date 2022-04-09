@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width: 780px;
+    height: auto;
+    margin: 100px auto;
+}
+
+section label{
+    width: 175px;
+    padding: 20px 0;
+    display: block;
+    float: left;
+    background-color: #191919;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: green;
+}
+
+#galeria img{
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    transition: all 0.4;
+    object-fit: cover;
+}
+
+#bt_chapeu:checked ~ #galeria .camisa,
+#bt_chapeu:checked ~ #galeria .bota{
+    display: none;
+}
+
+#bt_camisa:checked ~ #galeria .cabeca,
+#bt_camisa:checked ~ #galeria .bota{
+    display: none;
+}
+
+#bt_bota:checked ~ #galeria .cabeca,
+#bt_bota:checked ~ #galeria .camisa{
+    display: none;
+}
