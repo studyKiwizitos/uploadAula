@@ -69,9 +69,10 @@ article .box{
     display: inline-block;
     width: 200px;
     height: 200px;
+    text-align: center;
 }
 article img{
-    border-radius: 1rem;
+    border-radius: 10rem;
 }
 
 footer{
