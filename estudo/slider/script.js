@@ -15,5 +15,5 @@ function next() {
 }
 
 function setImg() {
-    return slidering.setAttribute('src', 'src/' + images[i]);
+    return slidering.setAttribute('src', '/estudo/imgs/' + images[i]);
 }

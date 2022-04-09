@@ -1,19 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 section{
-    width: 780px;
+    width: 812px;
     height: auto;
-    margin: 100px auto;
+    margin: 20px auto;
 }
 
 section label{
-    width: 175px;
+    width: 200px;
     padding: 20px 0;
-    display: block;
-    float: left;
+    margin: 10px auto;
+    display: inline-block;
     background-color: #191919;
     color: #fff;
     text-align: center;
@@ -28,11 +29,17 @@ input:checked + label{
     background-color: green;
 }
 
+#galeria{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
 #galeria img{
-    float: left;
+    margin: 0 auto;
     width: 200px;
     height: 200px;
-    padding: 5px;
+    padding: 0px;
     transition: all 0.4;
     object-fit: cover;
 }
