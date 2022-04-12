@@ -9,54 +9,115 @@
     <title>Clothing</title>
 </head>
 <body>
-    <div class="menu">
-        <div class="logo"><img src="src/LOGO.png" alt=""></div>
-        <ul>
-            <li><i class="material-icons">account_circle</i></li>
-            <li><i class="material-icons">favorite</i></li>
-            <li><i class="material-icons">shopping_cart</i></li>
-        </ul>
-    </div>
-    <div class="slider">
-        <div class="image-box">
-            <img src="src/img1.png" class="slider-img">
+    <section id="menu-main">
+        <!--Menu start-->
+        <div class="menu">
+            <div class="logo"><img src="src/LOGO.png" alt=""></div>
+            <ul>
+                <li><i class="material-icons">account_circle</i></li>
+                <li><i class="material-icons">favorite</i></li>
+                <li><i class="material-icons">shopping_cart</i></li>
+            </ul>
         </div>
-        <button class="btn" onclick="prev()">
-            <i class="material-icons">arrow_back_ios</i>
-        </button>
-        <button class="btn" onclick="next()">
-            <i class="material-icons">arrow_forward_ios</i>
-        </button>
-    </div>
+        <!--Menu end-->
+    </section>
+    <section id="image-slider-main">
+        <!--Image slider start-->
+        <div class="slider">
+            <div class="slides">
+                <!--Radio Buttons start-->
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--Radio Buttons end-->
+                <!--Slide Images start-->
+                <div class="slide first">
+                    <img src="/estudo/imgs/img1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/estudo/imgs/img2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/estudo/imgs/img3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/estudo/imgs/img4.png" alt="">
+                </div>
+                <!--Slide Images end-->
+                <!--Autoplay start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--Autoplay end-->
+            </div>
+            <!--Manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--Manual navigation end-->
+        </div>
+        <!--Image slider end-->
+    </section>
+    <section id="card-gallery-main">
+        <h1>DESTAQUE DA SEMANA</h1>
+        <!--Cards start-->
+        <div class="cards card-gallery">
+            <!-- A card with given width -->
+            <div class="cards__item">
+                <img src="src/img1.png" alt="">
+            </div>
+            <div class="cards__item">
+                ...
+            </div>
+            <div class="cards__item">
+                ...
+            </div>
+            <div class="cards__item">
+                ...
+            </div>
+            <div class="cards__item">
+                ...
+            </div>
+            <div class="cards__item">
+                ...
+            </div>
+            <div class="cards__item">
+                ...
+            </div>
+            <div class="cards__item">
+                ...
+            </div>
+        </div>
+        <!--Cards end-->
+    </section>
+    <section id="contato-main">
+        <!--Caixa de contato-->
+        <div class="contact-box">
+            <div class="container-contact">
+                <i class="material-icons">notifications</i>
+                <p>Fique por dentro de todas as novidades da loja!</p>
+                <input type="email" name="email" id="email-contact">
+                <button>Assinar</button>
+            </div>
+        </div>
+    </section>
+    <section id="footer-main">
+        <footer>
+            <h2>NV CLOTHING</h2>
+            <div class="color color-1"></div>
+            <div class="color color-2"></div>
+            <div class="color color-3"></div>
+            <div class="color color-4"></div>
+            <div class="color color-5"></div>
+        </footer>
+    </section>
     <script src="script.js"></script>
-    <article>
-        <div class="box"><img src="src/img1.png" id="img1"><p>Novidades</p></div>
-        <div class="box"><img src="src/img2.png" id="img2"><p>Oferta</p></div>
-        <div class="box"><img src="src/img3.png" id="img3"><p>Masculino</p></div>
-        <div class="box"><img src="src/img4.png" id="img4"><p>Feminino</p></div>                
-        <div class="box"><img src="src/img5.png" id="img5"><p>Infantil</p></div>
-    </article>
-    <div class="cards">
-        <!-- A card with given width -->
-        <div class="cards__item">
-            ...
-        </div>
-        <div class="cards__item">
-            ...
-        </div>
-        <div class="cards__item">
-            ...
-        </div>
-        <div class="cards__item">
-            ...
-        </div>
-        <div class="cards__item">
-            ...
-        </div>
-        <div class="cards__item">
-            ...
-        </div>
-    </div>
-    <footer><h2>NV CLOTHING</h2></footer>
 </body>
 </html>
