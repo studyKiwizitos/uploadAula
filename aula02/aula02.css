@@ -28,13 +28,12 @@ img{
     background-color: #272D2D;
     color: #F6F8FF;
 }
-#card-filtro-galeria-main{
-    text-align: center;
+#card-gallery-main{
     margin: 10px auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 90vw;
-    background: #23CE6B;
+    padding: 20px 20px;
+    text-align: center;
+    width: 1200px;
+    background-color: #23CE6B;
 }
 #contato-main{
     height: fit-content;
@@ -46,7 +45,7 @@ img{
     height: 500px;
     margin: 20px auto;
     text-align: center;
-    background-color: #23CE6B;
+    background: #23CE6B;
 }
 
 /*Menu*/
@@ -67,7 +66,7 @@ img{
     align-items: center;
 }
 .menu > ul > li{padding: 10px 20px;}
-.logo img{width: 40px;}
+.logo img{width: 64px;}
 i:hover{
     cursor: pointer;
     color: #A846A0;
@@ -100,7 +99,6 @@ i:hover{
 .slider{
     width: 800px;
     height: 500px;
-    border-radius: 1rem;
     overflow: hidden;
     margin: 15px auto;
 }
