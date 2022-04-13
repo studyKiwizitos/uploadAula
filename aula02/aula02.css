@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: #F6F8FF;
+    
     /* 
     #23CE6B - Emerald
     #272D2D - Charleston Green
@@ -23,7 +24,11 @@ img{
 }
 
 /*Sections*/
-#card-gallery-main{
+#menu-buttons-main{
+    background-color: #272D2D;
+    color: #F6F8FF;
+}
+#card-filtro-galeria-main{
     text-align: center;
     margin: 10px auto;
     padding-top: 20px;
@@ -36,6 +41,13 @@ img{
     background: #A846A0;
     /*background-image: url("src/img3.png");*/
 }
+#filtro-galeria-main{
+    width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #23CE6B;
+}
 
 /*Menu*/
 .menu{
@@ -45,21 +57,43 @@ img{
     justify-content: space-between; /* Alinhamento Horizontal */
     align-items: center; /* Alinhamento Vertical */
     padding: 0 20px;
-    height: 100px;
+    height: 80px;
 }
 .menu > ul{
     width: 300px;
-    height: 100px;
     display: flex;
     list-style-type: none; 
     justify-content: center;
     align-items: center;
 }
 .menu > ul > li{padding: 10px 20px;}
-.logo img{width: 64px;}
+.logo img{width: 40px;}
 i:hover{
     cursor: pointer;
     color: #A846A0;
+}
+
+/*Menu buttons*/
+.menu-button > ul{
+    width: 500px;
+    height: 30px;
+    display: flex;
+    margin: 0 auto;
+    list-style-type: none; 
+    justify-content: center;
+    align-items: center;
+}
+.menu-button > ul > li{
+    padding: 10px 20px;
+}
+
+/*Diretório*/
+.diretorio-texto{
+    background-color: #50514F;
+    display: flex;
+    padding: 0 20%;
+    margin: 0 auto;
+    justify-content: left;
 }
 
 /*Slider*/
@@ -150,7 +184,6 @@ i:hover{
     background: #272D2D;
     text-align: center;
 }
-
 .contact-box{
     width: 300px;
     background: #F6F8FF;
@@ -207,22 +240,50 @@ footer{
     background-color: #272D2D;
     color: #F6F8FF;
 }
-
 .color{
     border: solid 1px #F6F8FF;
     width: 32px;
     height: 16px;
     display: inline-block;
 }
-.color-1{
-    background-color: #23CE6B ;
+.color-1{background-color: #23CE6B ;}
+.color-2{background-color: #272D2D ;}
+.color-3{background-color: #F6F8FF ;}
+.color-4{background-color: #A846A0 ;}
+.color-5{background-color: #50514F ;}
+
+/*PAGE 2 - GALERIA*/
+#filtro-galeria-main label{
+    width: 200px;
+    padding: 20px 0;
+    display: inline-block;
+    margin: 10px auto;
+    background-color: #272D2D;
+    color: #F6F8FF;
+    text-align: center;
+    cursor: pointer;
 }
-.color-2{
-    background-color: #272D2D ;
-}.color-3{
-    background-color: #F6F8FF ;
-}.color-4{
-    background-color: #A846A0 ;
-}.color-5{
-    background-color: #50514F ;
+#filtro-galeria-main input{
+    display: none;
 }
+#filtro-galeria-main input:checked + label{
+    background-color: #A846A0;
+}
+#galeria{
+    margin: 0 auto;
+}
+#galeria img{
+    text-align: left;
+    display: inline-flex;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    object-fit: cover;
+}
+#bt_chapeu:checked ~ #galeria .camisa,
+#bt_chapeu:checked ~ #galeria .bota{display: none;}
+#bt_camisa:checked ~ #galeria .cabeca,
+#bt_camisa:checked ~ #galeria .bota{display: none;}
+#bt_bota:checked ~ #galeria .cabeca,
+#bt_bota:checked ~ #galeria .camisa{display: none;}
