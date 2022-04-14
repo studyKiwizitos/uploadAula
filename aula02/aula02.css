@@ -25,6 +25,8 @@ img{
 
 /*Sections*/
 #menu-buttons-main{
+    justify-content: center;
+    margin: 0 auto;
     background-color: #272D2D;
     color: #F6F8FF;
 }
@@ -70,20 +72,6 @@ img{
 i:hover{
     cursor: pointer;
     color: #A846A0;
-}
-
-/*Menu buttons*/
-.menu-button > ul{
-    width: 500px;
-    height: 30px;
-    display: flex;
-    margin: 0 auto;
-    list-style-type: none; 
-    justify-content: center;
-    align-items: center;
-}
-.menu-button > ul > li{
-    padding: 10px 20px;
 }
 
 /*Diretório*/
@@ -285,3 +273,87 @@ footer{
 #bt_camisa:checked ~ #galeria .bota{display: none;}
 #bt_bota:checked ~ #galeria .cabeca,
 #bt_bota:checked ~ #galeria .camisa{display: none;}
+
+.nav-links {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  
+  .nav-links li {
+    list-style-type: none;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .burger {
+    cursor: pointer;
+    display: none;
+  }
+  .burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+    .burger {
+      display: block;
+      margin-right: 20px;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 92vh;
+      background-color: inherit;
+      margin-right: 0;
+      transform: translateX(100%);
+      transition: 0.5s;
+    }
+    .item {
+      display: none;
+      transform: scaleY(100%);
+      transition: 2s ease-in-out;
+    }
+  }
+  
+  .active {
+    transform: translateY(0%);
+    display: block;
+  }
+  
+  .linha1,
+  .linha2,
+  .linha3 {
+    transition: 1s;
+  }
+  
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  .linha1-active {
+    position: absolute;
+    transform: rotate(405deg);
+  }
+  .linha2-active {
+    position: absolute;
+    opacity: 0;
+  }
+  .linha3-active {
+    transform: rotate(135deg);
+  }  
